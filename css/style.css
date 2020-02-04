@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    letter-spacing: 2px;
+}
+
+.topbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    height: 80px;
+    width: 100%;
+
+    background: rgb(14, 13, 73);
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topbar-nav {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 30px;
+}
+
+.topbar-nav a {
+    display: inline-block;
+
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.topbar-nav a::after {
+
+    content: '';
+
+    display: block;
+    width: 0;
+    height: 2px;
+
+    background: white;
+
+    transition: width 1s;
+}
+
+.topbar-nav a:hover {
+
+    color: rgba(255, 255, 255, 1)
+}
+
+.topbar-nav a:hover::after {
+
+    width: 100%;
+    
+}
+
+section {
+
+    width: 100%;
+    height: calc(100vh - 10px);
+}
+
+.section-home {
+
+    background: rgb(250, 250, 246);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-home-title1:hover {
+
+    transform: scale(1.1);
+    font-size: 60px;
+    transition: 2s ease-in-out;
+}
+.section-about {
+    display: flex;
+    background: rgb(75, 71, 71);
+}
+
+.about-container {
+    width: 60%;
+    color: white;
+}
+
+.section-formation {
+
+    background: green;
+    
+}
+.section-experiences {
+
+    background: gray;
+    
+}
+.section-contact {
+
+    background: purple;
+    
+}
